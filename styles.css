@@ -43,7 +43,7 @@ noscript {
   cursor: pointer;
 }
 
-.clothingItem {
+.homeImage {
   min-width: 300px;
   max-width: 600px;
 }
@@ -74,6 +74,17 @@ a:hover {
 
 #collection {
   display: none;
+}
+
+.clothingItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.clothingItem {
+  width: 150px;
 }
 
 @media screen and (max-width: 900px) {
