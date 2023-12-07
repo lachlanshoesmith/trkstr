@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>trkstr</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trkstr</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <noscript>
+      <h1>Please enable JavaScript.</h1>
+    </noscript>
     <header>
-      <img class="logo" src="assets/TRKSTR Logo.png" alt="TRKSTR">
+      <img id="logo" src="assets/TRKSTR Logo.png" alt="TRKSTR" />
     </header>
-      <main>
-        <aside>
-          <p>5/5 23</p>
-          <p>Scatterbrain</p>
-        </aside>
-        <img class="clothingItem" src="assets/IMG_0954.PNG" alt="Jacket">
-      </main>
-      <footer>
-        <a href="#">View collection</a>
-      </footer>
-  
-</body>
+    <main id="home">
+      <aside aria-hidden="true">
+        <p>5/5 23</p>
+        <p>Scatterbrain</p>
+      </aside>
+      <img class="clothingItem" src="assets/IMG_0954.PNG" alt="Jacket" />
+    </main>
+    <main id="collection">
+      Two
+    </main>
+    <footer>
+      <a href="#collection" id="viewCollectionLink">View collection</a>
+    </footer>
+  </body>
+  <script src="code.js"></script>
 </html>
