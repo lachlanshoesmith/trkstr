@@ -19,36 +19,46 @@
       </header>
       <main id="home">
         <div class="homeItems">
-          <img
-            class="homeImage"
-            src="assets/flat/IMG_0954.webp"
-            alt="TRKSTR Denim Chore Jacket"
-          />
-          <img
-            class="homeImage"
-            src="assets/flat/IMG_0952.webp"
-            alt="TRKSTR Baggy Check Cargo Shorts"
-          />
-          <img
-            class="homeImage"
-            src="assets/flat/IMG_0962.webp"
-            alt="TRKSTR Baggy Tie Dye Cargo Pants"
-          />
-          <img
-            class="homeImage"
-            src="assets/flat/IMG_0965.webp"
-            alt="TRKSTR Oversized Distressed T-Shirt"
-          />
-          <img
-            class="homeImage"
-            src="assets/flat/IMG_0968.webp"
-            alt="TRKSTR Oversized Love Graffiti Shirt"
-          />
-          <img
-            class="homeImage"
-            src="assets/flat/IMG_0970.webp"
-            alt="TRKSTR Multi Utility Vest"
-          />
+          <a href="#jacket">
+            <img
+              class="homeImage"
+              src="assets/flat/IMG_0954.webp"
+              alt="TRKSTR Denim Chore Jacket"
+          /></a>
+          <a href="#shorts">
+            <img
+              class="homeImage"
+              src="assets/flat/IMG_0952.webp"
+              alt="TRKSTR Baggy Check Cargo Shorts"
+          /></a>
+          <a href="#pants">
+            <img
+              class="homeImage"
+              src="assets/flat/IMG_0962.webp"
+              alt="TRKSTR Baggy Tie Dye Cargo Pants"
+            />
+          </a>
+          <a href="#shorts">
+            <img
+              class="homeImage"
+              src="assets/flat/IMG_0965.webp"
+              alt="TRKSTR Oversized Distressed T-Shirt"
+            />
+          </a>
+          <a href="#shirt">
+            <img
+              class="homeImage"
+              src="assets/flat/IMG_0968.webp"
+              alt="TRKSTR Oversized Love Graffiti Shirt"
+            />
+          </a>
+          <a href="#vest">
+            <img
+              class="homeImage"
+              src="assets/flat/IMG_0970.webp"
+              alt="TRKSTR Multi Utility Vest"
+            />
+          </a>
         </div>
       </main>
       <main id="collection">
@@ -86,33 +96,20 @@
         </div>
       </main>
       <main id="itemPage">
-        <img src="" alt="placeholder" class="itemPreview" />
+        <img id="itemPageImage" src="" alt="placeholder" class="itemPreview" />
         <article>
-          <h1>Placeholder item</h1>
-          <h2>Price tag</h2>
-          <ul>
-            <li>Item qualities</li>
-          </ul>
+          <h1 id="itemPageName">Placeholder item</h1>
+          <h2 id="itemPagePrice">Price tag</h2>
+          <ul id="itemPageDescription"></ul>
           <p>
             <strong>Colour</strong>
-            <span item="selectedColourLabel">Name</span>
+            <span id="selectedColourLabel">Name</span>
           </p>
-          <ul class="colours">
-            <button aria-label="Space Blue"></button>
-          </ul>
+          <div class="radios" id="itemPageColours"></div>
           <p>
             <strong>Size</strong>
           </p>
-          <ul class="sizes">
-            <!-- these need to be dynamically generated -->
-            <!-- should be radio buttons -->
-            <button>XS</button>
-            <button>S</button>
-            <button>M</button>
-            <button>L</button>
-            <button>XL</button>
-            <button>XXL</button>
-          </ul>
+          <div class="radios" id="itemPageSizes"></div>
         </article>
       </main>
       <footer>

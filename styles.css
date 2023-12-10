@@ -68,6 +68,12 @@ footer a {
   width: 100%;
 }
 
+#itemPageImage {
+  min-width: 100px;
+  max-width: 500px;
+  width: 100%;
+}
+
 .sideHomeImage {
   min-width: 300px;
 }
@@ -108,6 +114,39 @@ a:hover {
   display: none;
 }
 
+#itemPage {
+  flex-direction: row;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  opacity: 0.5;
+  transition: opacity 0.1s ease-in-out;
+}
+
+label:hover {
+  opacity: 1;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']:checked + label {
+  box-shadow: 0px 0px 5px #111;
+  opacity: 1;
+}
+
+.radios {
+  display: flex;
+  gap: 8px;
+}
+
 .modelShots,
 .homeItems {
   display: grid;
@@ -137,6 +176,18 @@ a:hover {
 @media screen and (max-width: 680px) {
   .homeItems {
     grid-template-columns: 1fr 1fr;
+  }
+  #itemPage {
+    flex-direction: column;
+    overflow-y: auto;
+    height: 80dvh;
+    margin-bottom: 16px;
+  }
+  footer {
+    height: 5dvh;
+  }
+  footer a {
+    font-size: 1.2rem;
   }
 }
 
