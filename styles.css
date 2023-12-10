@@ -44,8 +44,13 @@ header {
 
 footer,
 noscript {
-  height: 10dvh;
   text-align: center;
+}
+
+noscript {
+  background: red;
+  color: white;
+  height: 100%;
 }
 
 footer a {
