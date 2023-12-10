@@ -10,29 +10,116 @@
     <noscript>
       <h1>Please enable JavaScript.</h1>
     </noscript>
-    <header>
-      <img id="logo" src="assets/TRKSTR Logo.webp" alt="TRKSTR" />
-    </header>
-    <main id="home">
-      <aside aria-hidden="true">
-        <p>5/5 23</p>
-        <p>Scatterbrain</p>
-      </aside>
-      <img class="homeImage" src="assets/IMG_0954.webp" alt="Jacket" />
-    </main>
-    <main id="collection">
-      <div class="clothingItems">
-        <img class="clothingItem" src="assets/IMG_0952.webp" alt="Shorts" />
-        <img class="clothingItem" src="assets/IMG_0962.webp" alt="Pants" />
-        <img class="clothingItem" src="assets/IMG_0954.webp" alt="Jacket" />
-        <img class="clothingItem" src="assets/IMG_0965.webp" alt="T-Shirt" />
-        <img class="clothingItem" src="assets/IMG_0968.webp" alt="Shirt" />
-        <img class="clothingItem" src="assets/IMG_0970.webp" alt="Vest" />
-      </div>
-    </main>
-    <footer>
-      <a href="#collection" id="viewCollectionLink">View collection</a>
-    </footer>
+    <div class="homeDecorativeColumn" id="leftDecorativeColumn"></div>
+    <div class="centreColumn">
+      <header>
+        <a href="#"
+          ><img id="logo" src="assets/TRKSTR Logo.webp" alt="TRKSTR"
+        /></a>
+      </header>
+      <main id="home">
+        <div class="homeItems">
+          <img
+            class="homeImage"
+            src="assets/flat/IMG_0954.webp"
+            alt="TRKSTR Denim Chore Jacket"
+          />
+          <img
+            class="homeImage"
+            src="assets/flat/IMG_0952.webp"
+            alt="TRKSTR Baggy Check Cargo Shorts"
+          />
+          <img
+            class="homeImage"
+            src="assets/flat/IMG_0962.webp"
+            alt="TRKSTR Baggy Tie Dye Cargo Pants"
+          />
+          <img
+            class="homeImage"
+            src="assets/flat/IMG_0965.webp"
+            alt="TRKSTR Oversized Distressed T-Shirt"
+          />
+          <img
+            class="homeImage"
+            src="assets/flat/IMG_0968.webp"
+            alt="TRKSTR Oversized Love Graffiti Shirt"
+          />
+          <img
+            class="homeImage"
+            src="assets/flat/IMG_0970.webp"
+            alt="TRKSTR Multi Utility Vest"
+          />
+        </div>
+      </main>
+      <main id="collection">
+        <div class="modelShots">
+          <img
+            class="modelShot"
+            src="assets/models/JF-Final 03-12-23-11.webp"
+            alt="Male model wearing TRKSTR Baggy Check Cargo Shorts"
+          />
+          <img
+            class="modelShot"
+            src="assets/models/JF-Final 03-12-23-13.webp"
+            alt="Male model wearing TRKSTR Oversized Distressed T-Shirt"
+          />
+          <img
+            class="modelShot"
+            src="assets/models/JF-Final 03-12-23-19.webp"
+            alt="Female model wearing TRKSTR Multi Utility Vest and TRKSTR Baggy Tie Dye Cargo Pants"
+          />
+          <img
+            class="modelShot"
+            src="assets/models/JF-Final 03-12-23-3.webp"
+            alt="Male model wearing TRKSTR Denim Chore Jacket"
+          />
+          <img
+            class="modelShot"
+            src="assets/models/JF-Final 03-12-23-35.webp"
+            alt="Female model wearing TRKSTR Oversized Love Graffiti Shirt"
+          />
+          <img
+            class="modelShot"
+            src="assets/models/JF-Final 03-12-23-32.webp"
+            alt="Male model wearing TRKSTR Denim Chore Jacket with a mustard-coloured bag"
+          />
+        </div>
+      </main>
+      <main id="itemPage">
+        <img src="" alt="placeholder" class="itemPreview" />
+        <article>
+          <h1>Placeholder item</h1>
+          <h2>Price tag</h2>
+          <ul>
+            <li>Item qualities</li>
+          </ul>
+          <p>
+            <strong>Colour</strong>
+            <span item="selectedColourLabel">Name</span>
+          </p>
+          <ul class="colours">
+            <button aria-label="Space Blue"></button>
+          </ul>
+          <p>
+            <strong>Size</strong>
+          </p>
+          <ul class="sizes">
+            <!-- these need to be dynamically generated -->
+            <!-- should be radio buttons -->
+            <button>XS</button>
+            <button>S</button>
+            <button>M</button>
+            <button>L</button>
+            <button>XL</button>
+            <button>XXL</button>
+          </ul>
+        </article>
+      </main>
+      <footer>
+        <a href="#collection" id="viewCollectionLink">View collection</a>
+      </footer>
+    </div>
+    <div class="homeDecorativeColumn" id="rightDecorativeColumn"></div>
   </body>
   <script src="code.js"></script>
 </html>

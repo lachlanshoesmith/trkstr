@@ -1,7 +1,21 @@
 @font-face {
-  font-family: Cytone;
-  src: url('assets/Cytone-Regular.otf') format('opentype');
+  font-family: Play;
+  src: url('assets/fonts/Play-Regular.ttf') format('truetype');
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: Play;
+  src: url('assets/fonts/Play-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Cytone;
+  src: url('assets/fonts/Cytone-Regular.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 *,
 *:before,
@@ -13,8 +27,8 @@ body {
   height: 100dvh;
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
-  font-family: 'Cytone';
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
   margin: 0;
   flex-direction: column;
   padding-left: 5dvw;
@@ -34,6 +48,10 @@ noscript {
   text-align: center;
 }
 
+footer a {
+  text-shadow: 0px 0px 5px white;
+}
+
 #logo {
   min-width: 100px;
   max-width: 400px;
@@ -44,8 +62,13 @@ noscript {
 }
 
 .homeImage {
+  min-width: 100px;
+  max-width: 200px;
+}
+
+.sideHomeImage {
   min-width: 300px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 main {
@@ -55,11 +78,17 @@ main {
   height: 80dvh;
 }
 
-aside {
-  position: absolute;
-  rotate: -90deg;
-  font-size: 1.5rem;
-  margin-right: 800px;
+a,
+aside p {
+  font-family: 'Cytone', 'Play', sans-serif;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+strong {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 a {
@@ -72,23 +101,37 @@ a:hover {
   text-decoration: underline;
 }
 
-#collection {
+#collection,
+#itemPage {
   display: none;
 }
 
-.clothingItems {
+.modelShots,
+.homeItems {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
   align-items: center;
 }
 
-.clothingItem {
+.modelShot {
   width: 150px;
 }
 
-@media screen and (max-width: 900px) {
-  aside {
+.floating {
+  position: fixed;
+  width: 150px;
+  left: 0;
+  top: 0;
+}
+
+.homeDecorativeColumn {
+  width: 20dvw;
+  height: 100dvh;
+}
+
+@media screen and (max-width: 1800px) {
+  .homeDecorativeColumn {
     display: none;
   }
 }
