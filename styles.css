@@ -116,6 +116,7 @@ a:hover {
 
 #itemPage {
   flex-direction: row;
+  gap: 32px;
 }
 
 label {
