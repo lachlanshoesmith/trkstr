@@ -80,10 +80,6 @@ main {
   width: 100%;
 }
 
-.centreColumn {
-  width: 100%;
-}
-
 a,
 aside p {
   font-family: 'Cytone', 'Play', sans-serif;
@@ -120,10 +116,6 @@ a:hover {
   align-items: center;
 }
 
-.modelShot {
-  width: 150px;
-}
-
 .floating {
   position: fixed;
   width: 150px;
@@ -148,8 +140,17 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 450px) {
-  .homeItems {
+@media screen and (max-width: 500px) {
+  .modelShots {
     grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .homeItems {
+    grid-template-columns: 1fr;
+  }
+  .homeItems,
+  .modelShots {
+    overflow-y: auto;
+    height: 75dvh;
   }
 }
