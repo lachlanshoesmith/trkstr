@@ -185,8 +185,10 @@ input[type='radio']:checked + label {
   }
   #itemPage {
     flex-direction: column;
-    overflow-y: auto;
     height: 80dvh;
+  }
+  main {
+    overflow-y: auto;
     margin-bottom: 16px;
   }
   footer {
@@ -194,6 +196,17 @@ input[type='radio']:checked + label {
   }
   footer a {
     font-size: 1.2rem;
+  }
+  main {
+    justify-content: flex-start;
+  }
+  .homeItems {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  article {
+    max-width: 90%;
   }
 }
 
@@ -207,7 +220,6 @@ input[type='radio']:checked + label {
   }
   .homeItems,
   .modelShots {
-    overflow-y: auto;
     height: 75dvh;
   }
 }

@@ -126,18 +126,21 @@ const showCollection = () => {
   homePage.style.display = 'none';
   collectionPage.style.display = 'flex';
   itemPage.style.display = 'none';
+  collectionPage.scrollTo(0, 0);
 };
 
 const showHome = () => {
   homePage.style.display = 'flex';
   collectionPage.style.display = 'none';
   itemPage.style.display = 'none';
+  homePage.scrollTo(0, 0);
 };
 
 const showItemPage = (item) => {
   homePage.style.display = 'none';
   collectionPage.style.display = 'none';
   itemPage.style.display = 'flex';
+  itemPage.scrollTo(0, 0);
 
   itemPageImage.setAttribute('src', items[item].image);
   itemPageImage.setAttribute('alt', items[item].name);
