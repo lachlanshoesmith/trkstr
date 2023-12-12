@@ -2,20 +2,21 @@
   font-family: Play;
   src: url('assets/fonts/Play-Regular.ttf') format('truetype');
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Play;
   src: url('assets/fonts/Play-Bold.ttf') format('truetype');
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Cytone;
   src: url('assets/fonts/Cytone-Regular.otf') format('opentype');
+  font-display: swap;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 *,
 *:before,
